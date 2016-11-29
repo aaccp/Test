@@ -29,17 +29,21 @@ It can be increase using the following command: -XX:MaxPermSize=[value]
 # How to increase Java heap?
 
 Using the following command: -Xmxn
+
 Where n is a multiple of 1024 that represents the desired space for PermGen, this must be greater than 2MB. Letters K or M can be added to indicate kilo or mega bytes.
 
 # Explain Hotspot Heap structure
 
 The Heap space is divided in to Generations:
 
-* Young: 
+* Young: Space of memory dedicated for objects that may be temporary, divided on Eden and to Survivor spaces.
 
-..* Eden:
+* Eden: Every object is first stored in here, once full the GC runs
 
-..* Survivor: 
+* Survivor: When surviving a GC run on Eden objects are transered here, there are to Survivor spaces to swap and defragment the memory inside Survivor.
+
+*Old Generation: Every object that survived an specific number of GC runs will be inmediately stored here where the GC takes more time to run again.
+
 
 # Give two scenarios where you can get an OutOfMemoryError error
 
