@@ -38,9 +38,9 @@ The Heap space is divided in to Generations:
 
 * Young: Space of memory dedicated for objects that may be temporary, divided on Eden and to Survivor spaces.
 
-...* Eden: Every object is first stored in here, once full the GC runs.
+..* Eden: Every object is first stored in here, once full the GC runs.
 
-...* Survivor: When surviving a GC run on Eden objects are transered here, there are to Survivor spaces to swap and defragment the memory inside Survivor.
+..* Survivor: When surviving a GC run on Eden objects are transered here, there are to Survivor spaces to swap and defragment the memory inside Survivor.
 
 * Old Generation: Every object that survived an specific number of GC runs will be inmediately stored here where the GC takes more time to run again.
 
