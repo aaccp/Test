@@ -28,16 +28,18 @@ It can be increase using the following command: -XX:MaxPermSize=[value]
 
 # How to increase Java heap?
 
-Using the following command: Xmxn
+Using the following command: -Xmxn
 Where n is a multiple of 1024 that represents the desired space for PermGen, this must be greater than 2MB. Letters K or M can be added to indicate kilo or mega bytes.
 
 # Explain Hotspot Heap structure
 
 The Heap space is divided in to Generations:
 
-..* Young: 
+* Young: 
 
-....* 
+..* Eden:
+
+..* Survivor: 
 
 # Give two scenarios where you can get an OutOfMemoryError error
 
