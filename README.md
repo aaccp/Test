@@ -34,7 +34,9 @@ Where n is a multiple of 1024 that represents the desired space for PermGen, thi
 # Explain Hotspot Heap structure
 
 The Heap space is divided in to Generations:
+
 ..* Young: 
+
 ....* 
 
 # Give two scenarios where you can get an OutOfMemoryError error
