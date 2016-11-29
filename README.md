@@ -12,7 +12,7 @@ However you can star the execution inside your code using the method System.gc()
 
 # What are the downsides of GC?
 
-..*If run as a single thread the GC can cause the program to stop while the GC is running
+* If run as a single thread the GC can cause the program to stop while the GC is running
 
 
 # In few words what can you say about the heap space?
